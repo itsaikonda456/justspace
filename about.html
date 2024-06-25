@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .custom-width {
+          width: 70%;
+      }
+  </style>
+
+</head>
+<body>
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="text-white text-xl font-bold"><a href="/">Space </a></div>
+        <div class="hidden md:flex space-x-4">
+            <a href="/" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+            <a href="about.html" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">About</a>
+            <a href="feedback.html" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">Feedback</a>
+            <a href="contact.html" class="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">Contact Us</a>
+        </div>
+        <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">About</a>
+        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">Feedback</a>
+        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-3 py-2 rounded">Contact Us</a>
+    </div>
+</nav>
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex w-full mb-20 flex-wrap">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">Space - To Collect Info & Images</h1>
+      <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">The universe encompasses all of space, time, matter, and energy. It includes billions of galaxies, each containing billions of stars, as well as various types of celestial objects such as planets, moons, asteroids, comets, and nebulae. Scientists study the universe to understand its origins, evolution, and fundamental laws governing its vast expanse.</p>
+    </div>
+    <div class="flex flex-wrap md:-m-2 -m-1">
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://t4.ftcdn.net/jpg/00/99/12/85/360_F_99128546_wUPnc2cgVAWryE8HLiu6JpyXqPnmCIZy.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://cdn.britannica.com/29/148329-050-269A9EFE/night-sky-Milky-Way-Galaxy.jpg">
+        </div>
+      </div>
+      <div class="flex flex-wrap w-1/2">
+        <div class="md:p-2 p-1 w-full">
+          <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/1200px-FullMoon2010.jpg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://science.nasa.gov/wp-content/uploads/2023/07/hubble-space-telescope-hst-6.jpg?w=4096&format=jpeg">
+        </div>
+        <div class="md:p-2 p-1 w-1/2">
+          <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://images.inc.com/uploaded_files/image/1920x1080/getty_51615686_397439.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- accordian -->
+
+<div class="max-w-screen-lg mx-auto mt-2 custom-width">
+  <div class="accordion border-x-2 border-l-neutral-950">
+      <div class="accordion-item border-b">
+          <button class="accordion-header w-full text-left py-4 px-5 bg-white" onclick="toggleAccordion(event)">
+              <span class="font-semibold">its a Space Website</span>
+          </button>
+          <div class="accordion-content hidden px-5 py-4 bg-gray-50">
+              <p class="text-gray-700">Space Exploration Technologies Corporation, commonly referred to as SpaceX, is an American spacecraft manufacturer, launch service provider and satellite communications company headquartered in Hawthorne,</p>
+          </div>
+      </div>
+      <div class="accordion-item border-b">
+          <button class="accordion-header w-full text-left py-4 px-5 bg-white" onclick="toggleAccordion(event)">
+              <span class="font-semibold">To Collect Info About Space</span>
+          </button>
+          <div class="accordion-content hidden px-5 py-4 bg-gray-50">
+              <p class="text-gray-700">The National Aeronautics and Space Administration (NASA; /ˈnæsə/) is an independent agency of the U.S. federal government responsible for the civil space program, aeronautics research, and space research. Established in 1958, it succeeded the National Advisory Committee for Aeronautics (NACA) to give the U.S. space development effort a distinct civilian orientation, emphasizing peaceful applications in space science.</p>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <button class="accordion-header w-full text-left py-4 px-5 bg-white" onclick="toggleAccordion(event)">
+              <span class="font-semibold">Inspire To Everyone Towards Space </span>
+          </button>
+          <div class="accordion-content hidden px-5 py-4 bg-gray-50">
+              <p class="text-gray-700"> It can inspire students to dream big, think smart, and pursue private-sector or public-sector careers that contribute to the advancement of knowledge and technology. Space exploration is like embarking on a journey of self-discovery.
+              </p>
+          </div>
+      </div>
+  </div>
+</div>
+<footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+<img width="100" height="100" src="https://i.etsystatic.com/16327816/r/il/08e949/4339595026/il_570xN.4339595026_cvb8.jpg" alt="">     
+ <span class="ml-3 text-xl">Space</span>
+    </a>
+    <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 Space —
+      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@space</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a href="https://www.facebook.com/groups/spaceXverse/" target="_blank" class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a href="https://x.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/spacex/?hl=en" target="_blank" class="ml-3 text-gray-500">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/company/spacex" target="_blank" class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+      </a>
+    </span>
+  </div>
+</footer>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    function toggleAccordion(event) {
+      const header = event.currentTarget;
+      const content = header.nextElementSibling;
+      const isOpen = !content.classList.contains('hidden');
+      document.querySelectorAll('.accordion-content').forEach((item) => item.classList.add('hidden'));
+      if (!isOpen) {
+          content.classList.remove('hidden');
+      }
+  }
+  </script>
+</body>
+</html>
